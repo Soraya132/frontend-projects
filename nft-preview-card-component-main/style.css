@@ -1,0 +1,100 @@
+@font-face {
+    font-family: myfont;
+    src: url(fonts/static/Outfit-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: myfont;
+}
+.container{
+    display: grid;
+    margin:80px auto;
+    width: 300px;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 10px;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: center;
+    gap:20px;
+    padding-bottom:20px;
+}
+.col-1{
+    margin-top:15px;
+}
+.col-2{
+    display: grid;
+    gap:15px
+}
+h3{
+    color:white;
+    font-weight: 600;
+}
+.paragraph{
+    color:hsl(215, 51%, 70%);
+}
+.paragraph-1{
+    color:white;
+}
+.paragraph-1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-1{
+    width:9px;
+    padding-right:2px;
+}
+.icon-2{
+    width: 11px;
+}
+.border{
+    border-bottom:  solid 1px;
+    border-color: hsl(215, 32%, 27%);
+}
+.avatar{
+    display: grid;
+    grid-template-columns: 50px 80%;
+    gap:10px;
+    align-items: center;
+}
+.avatar-1{
+    width: 100%;
+}
+
+.background{
+    width: 100%;
+    height: 270px;
+    background:url(images/image-equilibrium.jpg) ;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.hover:hover{
+    background-image: url(/images/icon-view.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:hwb(178 0% 0%);
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+@media (max-width:400px) {
+    .container-sm{
+        width: 90%;
+    }
+}
+
