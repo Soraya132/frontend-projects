@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: fontName;
+    src: url(fonts/static/Outfit-Medium.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 550px;
+    display: flex;
+    margin:80px auto;
+}
+.col-1{
+    display: flex;
+    flex: 1;
+}
+.col-1 img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.col-2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.col-2 p,.col-2 h1{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.preview{
+    font-family: fontName;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+
+}
+h1{
+    padding-top:20px;
+    font-weight: 700;
+    font-size:40px;
+    line-height: 1;
+}
+p{
+    font-family: fontName;
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+    padding-top:20px;
+    line-height: 1.8;
+}
+
+.first{
+    color: hsl(158, 36%, 37%);;
+    font-size: 37px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    display: flex;
+}
+.second{
+    text-decoration: line-through;
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+.padding{
+    padding:10px;
+}
+button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    border-radius: 9px;
+    margin:10% auto;
+    margin-bottom:0;
+    padding:3% 30%;
+    font-family: fontName;
+    color:white;
+}
+button img{
+    width:30px;
+    padding-right:10px;
+}
+button:hover{
+    opacity:0.9;
+}
+@media (min-width:601px) {
+    .desktop{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+   .mobile{
+    display: none;
+   }
+   .desktop-1{
+    display: flex;
+   }
+   .container-1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+   }
+   .desktop img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+   .desk-border{
+    padding-top:10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+
+}
