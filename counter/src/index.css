@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section{
+    background-image: url("./images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.second{
+    background-image: url("./images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
